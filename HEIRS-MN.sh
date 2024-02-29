@@ -1,5 +1,5 @@
 #!/bin/bash
-# HERENCIA Masternode Setup Script V1.0.0 for Ubuntu
+# HERENCIA Masternode Setup Script V1.1.0 for Ubuntu
 #
 # Script will attempt to autodetect primary public IP address
 # and generate masternode private key unless specified in command line
@@ -47,7 +47,7 @@ function stop_daemon {
 genkey=$1
 clear
 
-echo -e "${GREEN} ------- HERENCIA MASTERNODE INSTALLER V1.0.0--------+
+echo -e "${GREEN} ------- HERENCIA MASTERNODE INSTALLER V1.1.0--------+
  |                                                  |
  |                                                  |::
  |       The installation will install and run      |::
@@ -130,8 +130,8 @@ fi
 #Installing Daemon
 cd ~
 rm -rf /usr/local/bin/herencia*
-wget https://github.com/herenciacoin/HEIRS/releases/download/v1.0.0/HEIRS-1.0.0-ubuntu-daemon.tar.gz
-tar -xzvf HEIRS-1.0.0-ubuntu-daemon.tar.gz
+wget https://github.com/herenciacoin/HEIRS/releases/download/v1.1.0/HEIRS-1.1.0-ubuntu-daemon.tar.gz
+tar -xzvf HEIRS-1.1.0-ubuntu-daemon.tar.gz
 sudo chmod -R 755 herencia-cli
 sudo chmod -R 755 herenciad
 cp -p -r herenciad /usr/local/bin
@@ -179,7 +179,7 @@ done
     herencia-cli stop
     sleep 5
 cd ~/.herencia && rm -rf blocks chainstate sporks
-cd ~/.herencia && wget https://github.com/herenciacoin/HEIRS/releases/download/v1.0.0/bootstrap.zip
+cd ~/.herencia && wget https://github.com/herenciacoin/HEIRS/releases/download/v1.1.0/bootstrap.zip
 cd ~/.herencia && unzip bootstrap.zip
 sudo rm -rf ~/.herencia/bootstrap.zip
 
