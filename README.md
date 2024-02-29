@@ -71,3 +71,14 @@ This guide will assist you in setting up a HERENCIA Masternode on a Linux Server
 - ```herencia-cli getmasternodestatus```  
 
 **Сongratulations you did it!**
+
+# Guide for HERENCIA v1.1.0 MasterNode Update:
+
+The instructions below are designed for users currently running an older version of HERENCIA v1.0.0 need update to v1.1.0
+
+``` 
+wget -q https://raw.githubusercontent.com/herenciacoin/MNScript/main/HEIRS-MN-UPDATE.sh
+
+sudo chmod +x HEIRS-MN-UPDATE.sh
+
+./HEIRS-MN-UPDATE.sh
